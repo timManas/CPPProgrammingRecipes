@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Lists C++" << std::endl;
+    std::cout << "C++ Lists" << std::endl;
     return 0;
 }

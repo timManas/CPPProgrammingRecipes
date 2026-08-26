@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 #Main Project
 add_executable(CPPProgrammingRecipes
         main.cpp
-        DataStructures/Dictionary/dictionary.h
         main.h
 )
 
@@ -17,4 +16,10 @@ add_executable(Lists
 
 add_executable(Dictionary
         DataStructures/Dictionary/main.cpp
+        DataStructures/Dictionary/dictionary.h
+)
+
+add_executable(Basics
+        DataStructures/Basics/main.cpp
+        DataStructures/Basics/basics.h
 )
