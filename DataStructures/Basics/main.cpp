@@ -5,18 +5,23 @@ int main() {
 
     std::cout << "Initialization \n";
     int a = 5;      // traditional initialization
-    int b = (7);     // direct initialization. Introduced in C++11. This is the same as int d = 7
-    int c (8);     // direct initialization. Introduced in C++11. This is the same as int d = 7
+    std::cout << a << '\n';
+
+    int b = (7);     // direct initialization. Introduced in C++11. This is the same as int b = 7
+    std::cout << b << '\n';
+
+    int c (8);     // direct initialization. Introduced in C++11. This is the same as int c = 9
+    std::cout << c << '\n';
 
     //Modern Initialization
-    int d{4};      // brace initialization. Introduced in C++11. This is the same as int b = 4
-    int e = {6};    // brace initialization. Introduced in C++11. This is the same as int c = 6
-
-    std::cout << a << '\n';
-    std::cout << b << '\n';
-    std::cout << c << '\n';
+    int d{4};      // brace initialization. Introduced in C++11. This is the same as int d = 4
     std::cout << d << '\n';
+
+    int e = {6};    // brace initialization. Introduced in C++11. This is the same as int e = 6
     std::cout << e << '\n';
+
+    int f = {1 + 2 + 3 + 4 + 5};    // Numbers inside the {} are addable
+    std::cout << f << '\n';
 
     // ---------------------------------------
 
@@ -41,6 +46,12 @@ int main() {
 
 
     // ---------------------------------------
+
+    // This is an undefined value
+    int undefined;
+    std:: cout << "Undefined value: " + undefined << '\n';
+
+
 
     return 0;
 }
