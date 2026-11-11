@@ -1,5 +1,16 @@
 #include <iostream>
 
+// Important. Functions need to be defined at the top of the file. Not at the bottom
+
+int multiplier(int x) {
+    return x*x;
+}
+
+void nullifer() {
+    std::cout << "Print Empty Function" << std::endl;
+}
+
+
 int main() {
     std::cout << "C++ Basics" << std::endl;             //Note using ::endl is not best practice. Leave it blank and use \n instead
 
@@ -45,13 +56,19 @@ int main() {
     std::cout << "-> Notice we only extracted the digits and not the letters \n";
 
 
-    // ---------------------------------------
+    // Undefined value ---------------------------------------
 
     // This is an undefined value
     int undefined;
-    std:: cout << "Undefined value: " + undefined << '\n';
+    std:: cout << "\n" << "Undefined value: " + undefined << '\n';
 
+    // Functions ---------------------------------------
 
+    int functionResult = multiplier(5);
+    std::cout << "\n" << "function Result:" << functionResult << "\n" ;
+
+    nullifer();
 
     return 0;
 }
+
