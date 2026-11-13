@@ -6,10 +6,14 @@ int multiplier(int x) {
     return x*x;
 }
 
-void nullifer() {
+void executeThisMethod() {
     std::cout << "Print Empty Function" << std::endl;
 }
 
+void useForwardDeclarationMethod();
+int forwardDeclarationMethod(int x);
+
+int anotherFileMethod(int i);
 
 int main() {
     std::cout << "C++ Basics" << std::endl;             //Note using ::endl is not best practice. Leave it blank and use \n instead
@@ -67,8 +71,24 @@ int main() {
     int functionResult = multiplier(5);
     std::cout << "\n" << "function Result:" << functionResult << "\n" ;
 
-    nullifer();
+    // Execute this method
+    executeThisMethod();
 
-    return 0;
+    int fwd = forwardDeclarationMethod(5);
+    std::cout << "Forward Declaration Method Result: " << fwd << "\n" << std::endl;
+
+    //NOTE: This is like IMPORTING !!! The function lives in another file.
+    // We technically 'import' using forwardDeclarationMethod
+    int getValueFromAnotherFile = anotherFileMethod(5);
+    std::cout << "Another File Method Result: " << getValueFromAnotherFile << "\n" << std::endl;
+
+    return EXIT_SUCCESS;
 }
 
+void useForwardDeclarationMethod() {
+    std::cout << "Print Forward Declaration Method" << "\n" << std::endl;
+}
+
+int forwardDeclarationMethod(int x) {
+    return x * x;
+}

@@ -22,4 +22,6 @@ add_executable(Dictionary
 add_executable(Basics
         DataStructures/Basics/main.cpp
         DataStructures/Basics/basics.h
+        DataStructures/Basics/test.cpp
+        DataStructures/Basics/test.h
 )

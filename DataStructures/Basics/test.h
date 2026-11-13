@@ -1,0 +1,13 @@
+//
+// Created by Tim on 2026-11-12.
+//
+
+#ifndef CPPPROGRAMMINGRECIPES_TEST_H
+#define CPPPROGRAMMINGRECIPES_TEST_H
+
+
+class test {
+};
+
+
+#endif //CPPPROGRAMMINGRECIPES_TEST_H
